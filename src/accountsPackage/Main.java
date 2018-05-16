@@ -2,6 +2,9 @@ package accountsPackage;
 
 import java.util.Scanner;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -11,7 +14,8 @@ public class Main {
 
 		Service service = new Service();
 		Scanner keyboard = new Scanner(System.in);
-		
+		ObjectMapper mapper = new ObjectMapper();
+		//Staff obj = new Staff();
 		
 		while (escape) {
 			
@@ -39,6 +43,10 @@ public class Main {
 			else if (input == 4) {
 				escape = false;
 			}
+			
+			
+			//String jsonInString = mapper.writeValueAsString(account)
+			
 			
 
 		}
