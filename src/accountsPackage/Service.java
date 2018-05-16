@@ -26,7 +26,7 @@ public class Service {
 		input = keyboard.nextLine();	
 		userInfo.get(key).setLastName(input);
 		
-		keyboard.close();
+		//keyboard.close();
 			
 	}
 	
@@ -36,6 +36,9 @@ public class Service {
 		
 	}
 
+	public void removeAccount(int key) {
+		userInfo.remove(key);
+	}
 	
 	
 }
